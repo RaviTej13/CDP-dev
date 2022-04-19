@@ -1,0 +1,45 @@
+.sidebarRoom {
+  height: 100%;
+  margin: auto 1px;
+  /* background-color: rgb(222, 222, 222); */
+  background-color: white;
+  padding: 0px 1px;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  transition: ease-in-out 0.1s;
+}
+
+.head {
+  padding: 7px 8px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #01bf71;
+  border-radius: 10px;
+  position: sticky;
+}
+
+#closeicon {
+  font-size: 1em;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+p {
+  font-size: 8px;
+  margin-left: 10px;
+}
+
+.Rect > img {
+  position: relative;
+  border: 2px solid rgb(234, 234, 234);
+  height: 95px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.Rect {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: auto;
+  background-color: white;
+}

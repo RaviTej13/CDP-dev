@@ -23,7 +23,7 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-      <VideoBg  autoPlay loop muted src={video} type="video/mp4" />
+      <VideoBg  src={video} autoPlay loop muted  type="video/mp4" />
       </HeroBg>
       <Content>
         <ContentH1>CUSTOMIZABLE DIGITAL PLANNING </ContentH1>

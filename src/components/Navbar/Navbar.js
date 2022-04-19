@@ -13,6 +13,7 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
+import logo from "../../images/LOGO/CDPlightlogo.png";
 
 const Navbar = (props) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -38,7 +39,11 @@ const Navbar = (props) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              CDP
+              <img
+                src={logo}
+                style={{ height: "120px", width: "120px;" }}
+                alt="logo"
+              />
             </NavLogo>
             <MobileIcon onClick={props.toggle}>
               <FaBars />
@@ -51,7 +56,8 @@ const Navbar = (props) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}>
+                  offset={-80}
+                >
                   Documentation
                 </NavLinks>
               </NavItem>
@@ -63,7 +69,8 @@ const Navbar = (props) => {
                   spy={true}
                   exact="true"
                   activeClass="active"
-                  offset={-80}>
+                  offset={-80}
+                >
                   Discover
                 </NavLinks>
               </NavItem>
@@ -75,7 +82,8 @@ const Navbar = (props) => {
                   spy={true}
                   exact="true"
                   activeClass="active"
-                  offset={-80}>
+                  offset={-80}
+                >
                   Services
                 </NavLinks>
               </NavItem>
@@ -87,7 +95,8 @@ const Navbar = (props) => {
                   spy={true}
                   exact="true"
                   activeClass="active"
-                  offset={-80}>
+                  offset={-80}
+                >
                   About
                 </NavLinks>
               </NavItem>
@@ -100,7 +109,8 @@ const Navbar = (props) => {
                 spy={true}
                 exact="true"
                 activeClass="active"
-                offset={-80}>
+                offset={-80}
+              >
                 Draw
               </NavBtnLink>
             </NavBtn>

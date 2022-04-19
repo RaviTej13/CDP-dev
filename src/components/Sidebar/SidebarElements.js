@@ -19,14 +19,16 @@ export const SidebarContainer = styled.aside`
 `;
 
 export const CloseIcon = styled(FaTimes)`
+margin-top: 55px;
   color: #fff;
   float: right;
-  margin-right: 10px;
+  margin-right: 20px;
+  font-size: 20px;
 `;
 
 export const Icon = styled.div`
   position: relative;
-  top: -20px;
+  top: -80px;
   right: 1.5;
   background: transparent;
   font-size: 2rem;
@@ -39,9 +41,10 @@ export const SidebarWrapper = styled.div`
 `;
 
 export const SidebarMenu = styled.ul`
+  margin-top: -150px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(5, 70px);
   text-align: center;
 
   @media screen and (max-width: 480px) {
@@ -50,6 +53,7 @@ export const SidebarMenu = styled.ul`
 `;
 
 export const SidebarLink = styled(LinkS)`
+  margin-top: -40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +73,7 @@ export const SidebarLink = styled(LinkS)`
 export const SideBtnWrap = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 `;
 
 export const SidebarRoute = styled(LinkR)`
@@ -103,3 +107,4 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decoration: none;
 `;
+

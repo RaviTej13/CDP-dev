@@ -1,0 +1,53 @@
+.sidebarDoor {
+  height: 69%;
+  margin: auto 1px;
+  background-color: rgb(222, 222, 222);
+  padding: 0px 1px;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+}
+
+.head {
+  padding: 7px 8px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #01bf71;
+  border-radius: 10px;
+  position: sticky;
+}
+
+#closeicon {
+  font-size: 1em;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+p {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.Door > img {
+  position: relative;
+  border: 2px solid rgb(234, 234, 234);
+  height: 95px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.Door {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* position: absolute; */
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 133.5%;
+  overflow: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.Door::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}

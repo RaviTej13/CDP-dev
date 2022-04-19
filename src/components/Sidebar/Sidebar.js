@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../images/LOGO/CDPlightlogo.png"
 import {
   SidebarContainer,
   Icon,
@@ -16,12 +17,12 @@ const Sidebar = (props) => {
     <SidebarContainer isOpen={props.isOpen} onClick={props.toggle}>
       <Icon onClick={props.toggle}>
         <CloseIcon />
-        <NavLogo to="/">Logo</NavLogo>
+        <NavLogo to="/"><img src={logo} style={{height: "120px", width: "120px"}} alt="logo"/></NavLogo>
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to="about" onClick={props.toggle}>
-            About
+            Documentation
           </SidebarLink>
           <SidebarLink to="discover" onClick={props.toggle}>
             Discover
@@ -30,11 +31,11 @@ const Sidebar = (props) => {
             Services
           </SidebarLink>
           <SidebarLink to="signup" onClick={props.toggle}>
-            Sign up
+            About
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/signin">Sign In</SidebarRoute>
+          <SidebarRoute to="/draw">Draw</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

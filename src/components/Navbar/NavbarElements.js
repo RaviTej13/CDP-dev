@@ -25,20 +25,15 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
+  padding: 0 18px;
   max-width: 1100px;
 `;
 
 export const NavLogo = styled(LinkR)`
   color: #fff;
-  justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
 `;
 
 export const MobileIcon = styled.div`
@@ -77,7 +72,7 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 1.6rem;
   height: 100%;
   cursor: pointer;
 
